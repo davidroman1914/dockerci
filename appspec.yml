@@ -3,9 +3,9 @@ os: linux
 files:
   - source: /
     destination: /myapp
-#permissions:
-#  - object: /myapp/startApp.sh
-#    mode: 777
+permissions:
+  - object: /myapp/stopApp.sh
+    mode: 777
 hooks:
   ApplicationStop:
     - location: stopApp.sh
